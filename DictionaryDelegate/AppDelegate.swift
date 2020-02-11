@@ -13,9 +13,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var title : String = ""
+    var options : [String] = []
+    var scores : [String : String] = [:]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        title = "Week 6 Dictionary and Delegate"
+        options = ["Play", "Settings", "About"]
+        
+        scores["Score"] = "Score: 123"
+        scores["Level"] = "Level: 34"
+        scores["High"] = "Highscore: 1023021"
+        scores["Time"] = "Time Left: 42"
         return true
     }
 
